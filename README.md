@@ -22,7 +22,7 @@ The core project documented in this repository is an automated workflow built in
 * **The Method:** I architected the logic flow and API connections within n8n. Because I am focusing on systems logic rather than raw coding, I leveraged **Claude** to generate the specific data filtering and array-handling mechanics.
 
 ## 🚀 How This Site Is Maintained
-This entire site is built using raw HTML/CSS and is deployed via **GitHub Pages**. I maintain and update it completely through my ThinkPad's Linux terminal using standard Git workflow routines:
+This entire site is built using raw HTML/CSS and is deployed via **GitHub Pages**. I maintain and update it completely through the terminal using standard Git workflow routines (which I have to look up every single time):
 
 ```bash
 git add .
