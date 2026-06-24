@@ -1,10 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>My Awesome Blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Systems & Automation Portfolio</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            color: #333;
+        }
+        header {
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #111;
+            margin-bottom: 5px;
+        }
+        h2 {
+            color: #0066cc;
+            margin-top: 40px;
+        }
+        h3 {
+            color: #444;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #eee;
+        }
+    </style>
 </head>
 <body>
-	<h1>Welcome to my GitHub Pages Blog!</h1>
-	<p>This is my very first post published entirely from my Mac Terminal.</p>
+
+    <header>
+        <h1>Your Name</h1>
+        <p><strong>Systems & Automation Portfolio</strong></p>
+        <p>Exploring Linux, Workload Automation (n8n), and API Integration</p>
+    </header>
+
+    <hr>
+
+    <main>
+        <h2>Project: Client Document Automation & Data Mapping via n8n</h2>
+        
+        <h3>The Problem</h3>
+        <p>Our master list had the same client names repeating across multiple rows. If I ran a basic automation to create docs from that list, it would have created a brand new duplicate document for every single row, wasting cloud storage space and creating a massive manual cleanup chore.</p>
+        
+        <h3>The Solution</h3>
+        <p>I built an automation workflow using <strong>n8n</strong> to handle the data logic intelligently instead of just running a blind loop:</p>
+        <ul>
+            <li><strong>Deduplication:</strong> The workflow reads the raw spreadsheet data and filters out the duplicate names, making sure it only processes each unique client once.</li>
+            <li><strong>Document Generation:</strong> It automatically references a base template to create exactly one unique Google Doc for each unique client in our folders.</li>
+            <li><strong>Data Mapping:</strong> It captures the link of that newly created document and writes it back into every matching row on the master spreadsheet, ensuring no data lines are missed and everything stays perfectly synced.</li>
+        </ul>
+
+        <h3>Core Technical Concepts Practiced</h3>
+        <ul>
+            <li><strong>API Orchestration:</strong> Managing data flow between spreadsheets (Google Sheets) and document generation (Google Drive API) using n8n.</li>
+            <li><strong>Data Filtering & Arrays:</strong> Isolating unique values from a messy, repeating data stream.</li>
+            <li><strong>Workflow Automation:</strong> Replacing a tedious, multi-step manual process with a reliable, hands-off workflow.</li>
+        </ul>
+
+        <h3>Workflow Architecture Canvas</h3>
+        <p>[Coming soon: A screenshot of the n8n canvas nodes running on my ThinkPad Linux lab!]</p>
+    </main>
+
 </body>
 </html>
